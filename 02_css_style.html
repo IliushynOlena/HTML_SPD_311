@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS</title>
+    <!-- Css Selectors -->
+    <style> 
+       /* Create selector :
+        type{
+            property : value;
+            property : value;
+            property : value;
+        }
+       */
+       /* tag selector*/
+       h1, h2{
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 20px 15px 10px black;
+        border: 3px solid darkblue;
+       }
+       p{
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 150%;
+       }
+       code{
+        background-color: black;
+        color: white;
+        font-size: 22px;
+        font-family: monospace;
+        border-radius: 4px;
+        padding: 4px;
+       }
+       mark{
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 10px;
+       }
+       .style-2{
+        background-color: rgb(128, 128, 212);
+       }
+       .main-word{
+        color: rgb(119, 119, 119);
+        font-size: 22px;
+        border: 1px solid darkgray;
+       }
+       .styled{
+        text-decoration: underline;
+        font-weight: normal;
+       }
+       body{
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       #mail-title{
+        background-color: rgb(123, 123, 169);
+        color: black;
+        border: 2px solid black;
+
+       }
+
+    </style>
+</head>
+<body>
+    <h1 id="mail-title">Intro to CSS </h1>
+    <hr>
+    <p>
+<i> <span> Lorem ipsum dolor sit amet </span>consectetur adipisicing elit.
+     Reprehenderit sunt deleniti dignissimos neque explicabo, officia harum ex ratione similique est reiciendis voluptas, perspiciatis doloremque 
+    tempore alias error beatae incidunt ullam.</i>
+        H <sub>2</sub> O <br>
+        2 <SUP>2</SUP>  = 4
+    </p>
+    <p><abbr title="Cascading Style Sheets">CSS</abbr> is a formal language for describing the 
+        appearance of a document written using a 
+        markup language. Can also be applied to any XML
+         documents, such as SVG or XUL</p>
+    <h2 style="color: white; background-color:blue;text-align:center">Inline style</h2>
+    <p style="color:brown;font-weight:200;background-color:aqua" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed non
+         incidunt eius eos. Consequatur possimus fugit, eveniet 
+         ducimus itaque reprehenderit dolorem id, repellat nisi 
+         quidem fugiat dicta eligendi aliquid quisquam.</p>
+
+        <h2 class="style-2">Styling using CSS Selectors</h2>
+        <p> <mark>Lorem ipsum dolor sit,</mark>  amet consectetur adipisicing elit. 
+            Tenetur distinctio eveniet quos, blanditiis sed impedit 
+           <mark>odio ullam deleniti eum</mark>  nam commodi itaque iusto architecto 
+            fuga similique possimus. Sed, animi officia.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Tenetur distinctio eveniet quos, blanditiis sed impedit 
+                odio ullam deleniti eum nam commodi itaque iusto architecto 
+                fuga similique possimus. Sed, animi officia.</p>
+        <h2>Styling using CSS Selectors</h2>
+        <h2>Styling using CSS Selectors</h2>
+        <h2>Styling using CSS Selectors</h2>
+
+        <p>
+            Python. Create variable <br>
+            Create variable : <code>a = 100</code> 
+            Print variable : <code>print(a)</code> 
+            Input text : <code>a= int(input("Enter number : "))</code> 
+
+
+        </p>
+
+        <h2>Example of using class Selector</h2>
+        <p> <strong class="main-word">Lorem ipsum dolor sit amet</strong>  consectetur adipisicing elit. 
+            <strong class="main-word"> Voluptatum quis dolorem</strong>  nisi ipsam dicta eaque dolor! 
+           <strong class="styled"> Quis ipsum amet, debitis ea,</strong> quod nihil, ratione dicta 
+            magnam possimus hic illo. Ipsa!</p>
+
+</body>
+</html>
