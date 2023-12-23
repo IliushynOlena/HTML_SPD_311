@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .custom-ul-style{
+            list-style-type:square;
+            list-style-position: inside;
+            padding-left: 10px;
+            list-style-image: url(./markers/leaf.png);
+        }
+        ol{
+            list-style-type:decimal;
+        }
+        ol li{
+            color: red;
+        }
+        ol li::marker{
+            color: rgb(0, 255, 21);
+            font-weight: bold;
+        }
+        dt{
+            font-weight: bold;
+            color: rgb(36, 99, 36);
+        }
+        dd{
+            color: greenyellow;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        ol li ul{
+            list-style-type: square;
+            
+        }
+        ol li ul li::marker{
+            color: brown;            
+        }
+        ol {
+            list-style-type: none;
+            /*counter-reset: number;*/
+            font-style: italic;
+        }
+        ol li::before{
+            /*content: counter(number) ') ';
+            counter-increment: number;*/
+            content: '- ';
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>Before psevdo Class</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, numquam.</li>
+        <li>Rerum iure dolores maxime a ut, laboriosam voluptatibus itaque quidem!</li>
+        <li>Autem nemo animi tenetur exercitationem soluta laborum quas labore repellendus?</li>
+        <li>Eos cum mollitia suscipit libero saepe repellat perspiciatis cupiditate praesentium!</li>
+        <li>Architecto labore cumque facere corporis inventore sapiente aliquam neque rerum?</li>
+    </ol>
+
+    <h2>Multilevel Lists</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet.
+            <ul>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                <li>Id quam harum repellat. Dolorem, dolorum explicabo.</li>
+                <li>Quis, sed ducimus. Voluptatem, eum? Accusantium, voluptatibus!</li>
+            </ul>
+        </li>
+        
+        <li>Eius accusantium aliquid error. Ratione.</li>
+        <li>Laboriosam enim numquam maxime non?</li>
+    </ol>
+
+
+    <h2>Unordered List</h2>
+    <ul class="custom-ul-style">
+        <li>Lorem ipsum dolor sit ame Lorem ipsum dolor sit Lorem ipsum dolor sit amet. </li>
+        <li>Cupiditate ad quisquam consequatur tempora?</li>
+        <li>Praesentium sed iure ad illo.</li>
+        <li>Laudantium tenetur voluptates pariatur ex?</li>
+        <li>Accusantium voluptatibus sed eligendi repudiandae.</li>
+    </ul>
+    <h2>Ordered list</h2>
+    <ol start="10" reversed>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Quis quam neque quibusdam aliquid.</li>
+        <li>Labore expedita commodi enim dolorem?</li>
+        <li value="30">Alias eius labore unde facilis.</li>
+        <li>Eaque doloribus eligendi quibusdam cum?</li>
+        <li>Eaque doloribus eligendi quibusdam cum?</li>
+        <li>Eaque doloribus eligendi quibusdam cum?</li>
+        <li>Eaque doloribus eligendi quibusdam cum?</li>
+        <li>Eaque doloribus eligendi quibusdam cum?</li>
+    </ol>
+
+    <h2>Definition list</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing 
+            elit. Hic tenetur, repellendus soluta modi nesciunt 
+            veritatis maiores quia quaerat quod numquam!</dd>
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing 
+            elit. Dolorum facilis dolores eveniet officia corrupti
+             hic, tempore vitae quisquam a cum?</dd>
+        <dt>JS</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</dd>
+    </dl>
+
+
+
+    
+</body>
+</html>
