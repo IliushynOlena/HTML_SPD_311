@@ -1,0 +1,19 @@
+caption{
+    text-align:right ;
+    caption-side: bottom;
+}
+.col-1{
+    background-color: yellow;
+}
+.col-2{
+    background-color: orange;
+}
+.col-3{
+    background-color: red;
+}
+thead{
+    color: brown ;
+}
+tfoot{
+    color: white;
+}
